@@ -1,5 +1,5 @@
 {
-  "name": "vue-light-gallery",
+  "name": "@atefr/vue-light-gallery",
   "version": "1.0.2",
   "description": "VueJS lightweight image gallery for both mobile and desktop browsers.",
   "author": "Pere Monfort <24bitjs@gmail.com>",
@@ -24,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/peremp/vue-light-gallery.git"
+    "url": "git+https://github.com/atefr/vue-light-gallery.git"
   },
   "bugs": {
-    "url": "https://github.com/peremp/vue-light-gallery/issues"
+    "url": "https://github.com/atefr/vue-light-gallery/issues"
   },
   "keywords": [
     "vue-light-gallery-",
@@ -57,5 +57,9 @@
     "rollup-plugin-vue": "^5.0.0",
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
+  },
+  "homepage": "https://github.com/atefr/vue-light-gallery#readme",
+  "directories": {
+    "example": "example"
   }
 }

@@ -43,11 +43,19 @@
                 >
                   {{ image.title }}
                 </div>
+                <a v-if="image.link" :href="image.link" >
+                  <img
+                    :ref="`lg-img-${imageIndex}`"
+                    :src="shouldPreload(imageIndex) ? image.url : false"
+                    @load="imageLoaded($event, imageIndex)"
+                  >
+                </a>
                 <img
-                  :ref="`lg-img-${imageIndex}`"
-                  :src="shouldPreload(imageIndex) ? image.url : false"
-                  @load="imageLoaded($event, imageIndex)"
-                >
+                    v-else
+                    :ref="`lg-img-${imageIndex}`"
+                    :src="shouldPreload(imageIndex) ? image.url : false"
+                    @load="imageLoaded($event, imageIndex)"
+                  >
               </div>
             </li>
           </ul>
